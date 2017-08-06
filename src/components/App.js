@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import * as d3 from "d3";
+// import * as d3 from "d3";
 import '../App.css';
 import BarChart from './BarChart';
+import TreeChart from './TreeChart';
 
 class App extends Component {
 
@@ -13,6 +14,11 @@ class App extends Component {
         </div>
         <div>
           <BarChart data={[5,10,1,3]} size={[500,500]} />
+        </div>
+        <br />
+        <div>
+          <p>This is the TreeChart div.</p>
+          <TreeChart size={[500,500]} maxLabelLength={50}/>
         </div>
       </div>
     );
