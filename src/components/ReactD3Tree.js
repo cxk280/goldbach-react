@@ -27,15 +27,17 @@ import '../App.css';
       },
     ];
 
+  const translatePosition = {x: 450, y: 50}
+
 /*<Tree /> will fill width/height of its container; in this case `#treeWrapper`*/
 
 class ReactD3Tree extends Component {
   render() {
     return (
 
-      <div id="treeWrapper" style={{width: '50em', height: '20em'}}>
+      <div id="treeWrapper" style={{width: '70vw', height: '75vh', 'padding-left': '15vw', 'padding-right': '15vw'}}>
 
-        <Tree data={myTreeData} />
+        <Tree data={myTreeData} orientation="vertical" translate={translatePosition}/>
 
       </div>
     );
