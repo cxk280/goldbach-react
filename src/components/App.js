@@ -17,8 +17,9 @@ class App extends Component {
         </div>
         <br />
         <div>
-          <p>This is the TreeChart div.</p>
-          <TreeChart size={[500,500]} maxLabelLength={50}/>
+          <p>This is the top of TreeChart div.</p>
+          <TreeChart />
+          <p>This is the bottom of TreeChart div.</p>
         </div>
       </div>
     );

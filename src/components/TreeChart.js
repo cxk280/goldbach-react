@@ -158,9 +158,17 @@ class TreeChart extends Component {
    }
 
    render() {
-      return <svg id="bigContainer" ref={node => this.node = node}
-         width={500} height={500}>
-      </svg>
+      return (
+         <svg id="bigContainer" ref={node => this.node = node}
+            width={500} height={500}>
+            <g className="container">
+               <g className="node">
+                   <circle className="node-dot" />
+                   <text />
+               </g>
+            </g>
+         </svg>
+      )
    }
 
 }
