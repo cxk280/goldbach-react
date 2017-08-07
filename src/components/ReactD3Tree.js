@@ -99,9 +99,8 @@ import '../App.css';
       console.log('listOfPrimes[j]: ',listOfPrimes[j]);
       for (let k = listOfPrimes[listOfPrimes.length - 1]; k >= 0; k--) {
         if (listOfPrimes[j] + listOfPrimes[k] === i) {
-          console.log('listOfPrimes[j], listOfPrimes[k], and i: ' + listOfPrimes[j] + ', ' + listOfPrimes[k] + ', ' + i);
-          // myTreeData[0].children.children.push({name: listOfPrimes[j] + " + " + listOfPrimes[k]})
-          myTreeData[0].children[(i/2)-2].children.push({name: listOfPrimes[j] + " + " + listOfPrimes[k]})
+          //Still need to remove duplicates, i.e. 5+7 and 7+5
+          myTreeData[0].children[(i/2)-2].children.push({name: listOfPrimes[j] + " + " + listOfPrimes[k]});
         }
       }
     }
@@ -115,6 +114,7 @@ import '../App.css';
 
 class ReactD3Tree extends Component {
 
+  //Add a button so they can choose horizontal or vertical
   render() {
     return (
 
