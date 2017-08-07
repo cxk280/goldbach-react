@@ -90,6 +90,8 @@ import '../App.css';
   }
   console.log('listOfPrimes: ',listOfPrimes);
 
+  //Maybe add a button to do it in a range of 20 numbers
+
   for (let i = 4; i <= 20; i+=2) {
 
     myTreeData[0].children.push({name: i, children: []});
